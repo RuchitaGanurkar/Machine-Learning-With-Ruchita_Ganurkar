@@ -50,6 +50,15 @@ print(Y_test)
 print('-----------------------------------------------------')
 
 
+# Graph For Trained Data
+
+plt.scatter(X_train, Y_train, color = "red")
+plt.plot(X_train, regressor.predict(X_train), color = "black")
+plt.title("Trained Data Of Experience vs Salary")
+plt.xlabel("Experience")
+plt.ylabel("Salary")
+
+plt.show()
 
 # Graph For Tested Data
 
